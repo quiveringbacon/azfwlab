@@ -1,4 +1,4 @@
-Azure Firewall Lab
+# Azure Firewall Lab
 
 This creates a resource group, a hub vnet with an Azure firewall and a spoke vnet peered to the hub vnet. This creates a log analytics workspace and diagnostic settings for the firewall logs. Also creates Windows VM's in all those subnets with your public ip added to an NSG allowing RDP access. UDR's are in place routing all traffic to the firewall except for your public ip to allow RDP access directly to the VM's. NSG's are placed on the default subnets of each vnet allowing RDP access from your public ip. This also creates a logic app that will delete the resource group in 24hrs. You'll be prompted for the resource group name, location where you want the resources created, your public ip and username and password to use for the VM's.
 
