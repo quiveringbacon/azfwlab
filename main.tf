@@ -449,7 +449,7 @@ resource "azurerm_public_ip" "hubvm-pip" {
   name                = "hubvm-pip"
   location            = azurerm_resource_group.RG.location
   resource_group_name = azurerm_resource_group.RG.name
-  allocation_method = "Dynamic"
+  allocation_method = "Static"
   timeouts {
     create = "2h"
     read = "2h"
@@ -462,7 +462,7 @@ resource "azurerm_public_ip" "spokevm-pip" {
   name                = "spokevm-pip"
   location            = azurerm_resource_group.RG.location
   resource_group_name = azurerm_resource_group.RG.name
-  allocation_method = "Dynamic"
+  allocation_method = "Static"
   timeouts {
     create = "2h"
     read = "2h"
