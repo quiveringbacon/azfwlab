@@ -308,7 +308,7 @@ resource "azurerm_route_table" "RT" {
   }
   route {
     name           = "tohub"
-    address_prefix = "10.0.0.0/16"
+    address_prefix = "10.0.0.0/24"
     next_hop_type  = "VirtualAppliance"
     next_hop_in_ip_address = "10.0.2.4"
   }
